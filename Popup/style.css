@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+}
+
+button {
+  background-color: #008ecc;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-container.active {
+  display: flex;
+}
+
+.popup {
+  background: #fff;
+  width: 500px;
+  padding: 40px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+  position: relative;
+  border-radius: 4px;
+}
+
+.popup button {
+  border-radius: 50%;
+  font-size: 1rem;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
